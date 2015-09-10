@@ -21,12 +21,6 @@ Usage: $0 [OPTION]... [VAR=VALUE]...
     --prefix=PREFIX        installation directory [/usr/local/foo]
   Optional Features:
     --build-type           debug/release/profile/relwithdebinfo
-  Influential Environment Variables (only on first invocation
-  per build directory):
-    CC                     C compiler command
-    CFLAGS                 C compiler flags
-    CXX                    C++ compiler command
-    CXXFLAGS               C++ compiler flags
 "
 sourcedir="$( cd "$( dirname "$0" )" && pwd )"
 
@@ -56,7 +50,6 @@ prefix=/usr
 CMakeCacheEntries=""
 append_cache_entry CMAKE_INSTALL_PREFIX PATH   $prefix
 append_cache_entry CMAKE_BUILD_TYPE     STRING release
-# append_cache_entry BUILD_SHARED_LIBS    BOOL   false
 
 # parse arguments
 while [ $# -ne 0 ]; do
