@@ -1,0 +1,6 @@
+[submodule "foo-essentials"]
+	path = foo-essentials
+	url = https://github.com/gokhanettin/foo-essentials.git
+[submodule "foo-bar"]
+	path = foo-bar
+	url = https://github.com/gokhanettin/foo-bar.git
